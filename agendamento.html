@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Hospital São Marcos</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Bebas+Neue&family=Bruno+Ace&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" 
+            href="imagens/lovepik-hospital-png-image_401563532_wh860.png" 
+            type="image/x-icon">
+</head>
+</head>
+<body>
+    
+<!-- Barra de Navegação-->
+    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Hospital São Marcos</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link active" href="index.html">Home <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item active ">
+              <a class="nav-link" href="serviços.html">Nossos Serviços</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="PlanosdeSaude.html">Planos de Saúde</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Especialidades.html">Especialidades Medicas</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="quemsomos.html">Quem Somos</a>
+              </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Agendamento e Login
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="agendamento.html">Exames e Consultas</a>
+                <a class="dropdown-item" href="login.html">Login</a>
+                <a class="dropdown-item" href="Contato.html">Contato</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <section class="container principal">
+        <!--Formulario para fazer a consulta-->
+        <form class="form">
+            <div class="title">Bem vindo,<br><span>inscreva-se para continuar</span></div>
+            <input type="email" placeholder="Email" name="email" class="input">
+            <input type="password" placeholder="Password" name="password" class="input">
+            <select name="utilização" class="input">
+                
+                <option value="1">Cardiologia</option>
+                <option value="2">Fisioterapia</option>
+                <option value="3">Clinica Medica</option>
+                <option value="1">Infectologia</option>
+                <option value="2">Ortopedia</option>
+                <option value="3">Oncologia</option>
+                <option value="1">Neurologia</option>
+                <option value="2">Mastologia</option>
+                <option value="3">Ginecologia/Obstetrícia</option>
+                <option value="3">Outro</option>
+            </select>
+            
+            <div class="login-with">
+              
+              <div class="button-log">
+                <svg class="icon" height="56.6934px" id="Layer_1" style="enable-background:new 0 0 56.6934 56.6934;" version="1.1" viewBox="0 0 56.6934 56.6934" width="56.6934px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M51.981,24.4812c-7.7173-0.0038-15.4346-0.0019-23.1518-0.001c0.001,3.2009-0.0038,6.4018,0.0019,9.6017  c4.4693-0.001,8.9386-0.0019,13.407,0c-0.5179,3.0673-2.3408,5.8723-4.9258,7.5991c-1.625,1.0926-3.492,1.8018-5.4168,2.139  c-1.9372,0.3306-3.9389,0.3729-5.8713-0.0183c-1.9651-0.3921-3.8409-1.2108-5.4773-2.3649  c-2.6166-1.8383-4.6135-4.5279-5.6388-7.5549c-1.0484-3.0788-1.0561-6.5046,0.0048-9.5805  c0.7361-2.1679,1.9613-4.1705,3.5708-5.8002c1.9853-2.0324,4.5664-3.4853,7.3473-4.0811c2.3812-0.5083,4.8921-0.4113,7.2234,0.294  c1.9815,0.6016,3.8082,1.6874,5.3044,3.1163c1.5125-1.5039,3.0173-3.0164,4.527-4.5231c0.7918-0.811,1.624-1.5865,2.3908-2.4196  c-2.2928-2.1218-4.9805-3.8274-7.9172-4.9056C32.0723,4.0363,26.1097,3.995,20.7871,5.8372  C14.7889,7.8907,9.6815,12.3763,6.8497,18.0459c-0.9859,1.9536-1.7057,4.0388-2.1381,6.1836  C3.6238,29.5732,4.382,35.2707,6.8468,40.1378c1.6019,3.1768,3.8985,6.001,6.6843,8.215c2.6282,2.0958,5.6916,3.6439,8.9396,4.5078  c4.0984,1.0993,8.461,1.0743,12.5864,0.1355c3.7284-0.8581,7.256-2.6397,10.0725-5.24c2.977-2.7358,5.1006-6.3403,6.2249-10.2138  C52.5807,33.3171,52.7498,28.8064,51.981,24.4812z"></path></svg>
+              </div>
+              <div class="button-log">
+                <svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="56.693px" viewBox="0 0 56.693 56.693" version="1.1" id="Layer_1" height="56.693px" class="icon"><path d="M40.43,21.739h-7.645v-5.014c0-1.883,1.248-2.322,2.127-2.322c0.877,0,5.395,0,5.395,0V6.125l-7.43-0.029  c-8.248,0-10.125,6.174-10.125,10.125v5.518h-4.77v8.53h4.77c0,10.947,0,24.137,0,24.137h10.033c0,0,0-13.32,0-24.137h6.77  L40.43,21.739z"></path></svg>
+              </div>
+            </div>
+            <button class="button-confirm">Acessar  →</button>
+          </form>
+        <div class="container__descrição">
+          <h2 class="descricao__titulo">AGENDE SEUS EXAMES
+            DE IMAGEM E CONSULTAS
+            DE FORMA PRÁTICA,
+            RÁPIDA E SEGURA.</h2>
+          <p class="descricao__texto">Toda a facilidade que você precisa para
+            um atendimento de excelência.
+            Agende sua consulta e exame de
+            imagem em até 3 minutos
+          </p>
+          
+        </div>
+
+      </section>
+
+      <br>
+      <br>
+
+      <section class="container__card">
+        <div class="card" style="width: 18rem;">
+          
+          <div class="card-body">
+            <h5 class="card-title">Plano de Saúde ou Particular?</h5>
+            <p class="card-text">Aceitamos diversos Planos de Saúde, além do
+                atendimento particular. Você pode selecionar
+                a opção certa durante seu agendamento</p>
+            <a href="PlanosdeSaude.html" target="_blank" class="btn btn-primary">Visitar</a>
+          </div>
+        </div>
+  
+        <div class="card" style="width: 18rem;">
+          
+          <div class="card-body">
+            <h5 class="card-title">Agenda Flexível
+          </h5>
+            <p class="card-text">Você escolhe a especialidade e o horário de
+                agendamento. Todas essas opções aparecerão
+                automaticamente. </p>
+            
+          </div>
+        </div>
+      </section>
+      
+<br>
+<br>
+<!--Botão volta ao topo-->
+
+<div id="btnTop">
+  <i class="arrow up"></i>
+</div>
+
+<!--Footer do site -->
+
+<footer class="footer">
+  <div class="footer__addr">
+    <h1 class="footer__logo">Hospital SÃO MARCOS</h1>
+
+    <h2>Contact: 61981833395</h2>
+
+    <address>
+      R. Olavo Bilac, 2300 - Centro (Sul), Teresina - PI<br>
+
+      <a class="footer__btn" href="mailto:marcosandrebarrosmeneses@gmail.com">marcosandrebarrosmeneses@gmail.com</a>
+    </address>
+  </div>
+
+  <ul class="footer__nav">
+    <li class="nav__item">
+      <h2 class="nav__title">Recompensas</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="login.html">Entrar</a>
+        </li>
+
+        <li>
+          <a href="Contato.html">Saber mais</a>
+        </li>
+
+       
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Notícias e informações</h2>
+
+      <ul class="nav__ul">
+        <li>
+          <a href="#">Comunicados de imprensa</a>
+        </li>
+
+        <li>
+          <a href="serviços.html">Sobre Nossos</a>
+        </li>
+
+        <li>
+          <a href="https://www.instagram.com/hospitalsaomarcos/">Instagram</a>
+        </li>
+
+        <li>
+          <a href="https://www.facebook.com/saomarcospi/?locale=pt_BR">Facebook/a>
+        </li>
+
+        <li>
+          <a href="https://twitter.com/saomarcosmga">Twitter</a>
+        </li>
+
+       
+      </ul>
+    </li>
+
+    <li class="nav__item">
+      <h2 class="nav__title">Local</h2>
+
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3974.0808170202085!2d-42.80547228860701!3d-5.09063365159909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x78e375e28097ba3%3A0xecb20b737393ff3b!2sHospital%20S%C3%A3o%20Marcos!5e0!3m2!1spt-BR!2sbr!4v1686341991726!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </li>
+  </ul>
+
+  <div class="legal">
+    <p>&copy; 2023 Copyright.</p>
+
+  </div>
+</footer>
+
+
+    <script src="script1.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>

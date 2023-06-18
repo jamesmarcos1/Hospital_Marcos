@@ -1,0 +1,193 @@
+:root {
+    --branco-principal : #FFFFFF;
+    --cinza-secundario : #c0c0c0;
+    --botao-azul : #167bf7;
+    --cor-de-fundo : #00030c;
+    --cor-vermelha : #ff1010; 
+    --cor-amarela : #ffd416;
+    --fonte-principal: 'Inter';
+    --cor-laranja: #ff7300;
+    --cor-azul-marinho: #23238E;
+    --cor-aquamarine: #70DB93;
+}
+
+
+
+body {
+   
+    color: #FFFFFF;
+    font-family: 'Anton', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+/* Card */
+
+.especialidades {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+
+.card {
+    width: 190px;
+    height: 600px;
+    background: white;
+    padding: .4em;
+    border-radius: 6px;
+  }
+  
+  .card-image {
+    background-color: rgb(236, 236, 236);
+    width: 100%;
+    height: 300px;
+    border-radius: 6px 6px 0 0;
+  }
+  
+  .card-image:hover {
+    transform: scale(0.98);
+  }
+  
+  .category {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-weight: 600;
+    color: rgb(63, 121, 230);
+    padding: 10px 7px 0;
+  }
+  
+  .category:hover {
+    cursor: pointer;
+  }
+  
+  .heading {
+    height: 600px;
+    font-weight: 600;
+    color: rgb(88, 87, 87);
+    padding: 7px;
+  }
+  
+  .heading:hover {
+    cursor: pointer;
+  }
+  
+  .author {
+    color: gray;
+    font-weight: 400;
+    font-size: 11px;
+    padding-top: 20px;
+  }
+  
+  .name {
+    font-weight: 600;
+  }
+  
+  .name:hover {
+    cursor: pointer;
+  }
+
+  .navbar {
+    background: #00030c;
+  }
+
+ .fundo_especialidades {
+  background: #00030c;
+  height: 2000px;
+  margin-top: 45px;
+ }
+
+ /* Botão */
+ button {
+  appearance: button;
+  background-color: #1899D6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 19px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+ }
+ 
+ button:after {
+  background-clip: padding-box;
+  background-color: #1CB0F6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+ }
+ 
+ button:main, button:focus {
+  user-select: auto;
+ }
+ 
+ button:hover:not(:disabled) {
+  filter: brightness(1.1);
+ }
+ 
+ button:disabled {
+  cursor: auto;
+ }
+ 
+ button:active:after {
+  border-width: 0 0 0px;
+ }
+ 
+ button:active {
+  padding-bottom: 10px;
+ }
+
+ /* Botão indo pro Topo */
+
+#btnTop {
+  position: fixed;
+  bottom: 50px;
+  right: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(74,21,75,.5);
+  border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.arrow {
+  border: solid #4A154B;
+  border-width: 0 7px 7px 0;
+  padding: 5px;
+  display: inline-block;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+  
